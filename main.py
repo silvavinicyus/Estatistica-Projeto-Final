@@ -54,6 +54,7 @@ with open('covid19-rio.csv', 'r', encoding = "ISO-8859-1") as arquivo:
     varianciaPeriodo2 = np.var(periodo2)
     desvioPadraoPeriodo2 = np.std(periodo2)
 
+    print('\n\n')
     print('------------------ PERIODO 1 ------------------')
     print('MEDIA: ', round(mediaPeriodo1))
     print('VARIÂNCIA: ', round(varianciaPeriodo1))
@@ -63,6 +64,7 @@ with open('covid19-rio.csv', 'r', encoding = "ISO-8859-1") as arquivo:
     print('MEDIA: ', round(mediaPeriodo2))
     print('VARIÂNCIA: ', round(varianciaPeriodo2))
     print('DESVIO PADRÃO: ', round(desvioPadraoPeriodo2))
+    print('\n\n')
 
 
     meses = ['junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro']
@@ -73,3 +75,13 @@ with open('covid19-rio.csv', 'r', encoding = "ISO-8859-1") as arquivo:
     plt.xlabel('Meses')
     plt.plot(meses, valores)
     plt.show()
+
+    print('\n\n')
+    print('------------------ MESES ------------------')
+    print('Junho: ', junho)
+    print('Julho: ', julho)
+    print('Agosto: ', agosto)
+    print('Setembro: ', setembro)
+    print('Outubro: ', outubro)
+    print('Novembro: ', novembro)
+    print('\n\n')
